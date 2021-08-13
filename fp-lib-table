@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name featherclock)(type KiCad)(uri ${KIPRJMOD}/featherclock.pretty)(options "")(descr ""))
+)
