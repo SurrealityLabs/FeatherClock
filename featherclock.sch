@@ -1549,12 +1549,9 @@ Wire Wire Line
 Wire Wire Line
 	6500 10100 6500 10000
 Wire Wire Line
-	6700 9700 6500 9700
-Wire Wire Line
 	6700 9600 6500 9600
 Wire Wire Line
 	6500 9600 6500 9700
-Connection ~ 6500 9700
 Text Label 6500 9600 0    50   ~ 0
 VUSB
 $Comp
@@ -1571,5 +1568,35 @@ $EndComp
 Wire Wire Line
 	7500 9500 7500 9600
 Connection ~ 7500 9600
-NoConn ~ 8900 1300
+Wire Wire Line
+	8900 1300 8700 1300
+Text Label 8700 1300 0    50   ~ 0
+ADC
+$Comp
+L Device:R R15
+U 1 1 612DBEC5
+P 6250 9600
+F 0 "R15" V 6043 9600 50  0000 C CNN
+F 1 "10K" V 6134 9600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 9600 50  0001 C CNN
+F 3 "~" H 6250 9600 50  0001 C CNN
+F 4 "C25744" H 6250 9600 50  0001 C CNN "LCSC"
+	1    6250 9600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 9600 6500 9600
+Connection ~ 6500 9600
+Wire Wire Line
+	6700 9700 6600 9700
+Wire Wire Line
+	6600 9700 6600 9650
+Wire Wire Line
+	6600 9650 6000 9650
+Wire Wire Line
+	6000 9650 6000 9600
+Wire Wire Line
+	6000 9600 6100 9600
+Text Label 6000 9600 0    50   ~ 0
+EN
 $EndSCHEMATC
